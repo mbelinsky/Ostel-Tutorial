@@ -60,7 +60,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	}
 	
 	
-	#device1, #devicef1, #devicef2, #devicef3, #devicef4, #device2, #device3, #device4, #device5, #device6, #device7, #device8, #device9, #device10, #device11, #device12, #device13, #device14, #device15, #device16, #device17, #device18, #device19, #device20 {
+	#device1, #devicef1, #devicef2, #devicef3, #devicef4, #device2, #device3, #device4, #device5, #device6, #device7, #device8, #device9, #device10, #device11, #device12, #device13, #device14, #device15, #device16, #device17, #device18, #device19, #device20, #device21, #device22 {
 		width: 401px;
 		height: 601px;
 		position: absolute;
@@ -157,6 +157,12 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	#device20 {
 		background: url('galaxy20.png') no-repeat bottom;
 	}
+	#device21 {
+		background: url('galaxy21.png') no-repeat bottom;
+	}
+	#device22 {
+		background: url('galaxy22.png') no-repeat bottom;
+	}
 	
 	h1 {
 		font-family: "HelveticaNeue-Light", "Helvetica";
@@ -224,7 +230,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	
 	function reset() {
 		document.getElementById('window').removeAttribute("class");
-		document.getElementById('device20').setAttribute("style", "visibility:hidden");																																								
+		document.getElementById('device22').setAttribute("style", "visibility:hidden");																																								
 		document.getElementById('device9').setAttribute("style", "visibility:hidden");
 		document.getElementById('devicef4').setAttribute("style", "visibility:hidden");
 		document.getElementById('step18').setAttribute("class", "away");
@@ -243,7 +249,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	}
 	
 	function stepf1() {
-		document.getElementById('step1').setAttribute("class", "hidden");
+		document.getElementById('step8').setAttribute("class", "hidden");
 		document.getElementById('stepf1').setAttribute("class", "visible");
 		document.getElementById('devicef1').setAttribute("style", "visibility:visible");
 	}
@@ -301,7 +307,6 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('step6').setAttribute("class", "visible");
 		document.getElementById('device4').setAttribute("style", "visibility:hidden");
 		document.getElementById('device5').setAttribute("style", "visibility:visible");
-				setTimeout(step6a, 1200);
 	}	
 	
 	function step6a() {
@@ -329,35 +334,36 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	}	
 	
 	function step7() {
-		document.getElementById('step6c').setAttribute("class", "hidden");
+		document.getElementById('step6').setAttribute("class", "hidden");
 		document.getElementById('step7').setAttribute("class", "visible");
-		document.getElementById('device8').setAttribute("style", "visibility:hidden");
-		document.getElementById('device9').setAttribute("style", "visibility:visible");
+		document.getElementById('device5').setAttribute("style", "visibility:hidden");
+		document.getElementById('device6').setAttribute("style", "visibility:visible");
 	}	
 	function step8() {
 		document.getElementById('step7').setAttribute("class", "hidden");
 		document.getElementById('step8').setAttribute("class", "visible");
-		document.getElementById('device9').setAttribute("style", "visibility:hidden");
-		document.getElementById('device10').setAttribute("style", "visibility:visible");
+		document.getElementById('device6').setAttribute("style", "visibility:hidden");
+		document.getElementById('device7').setAttribute("style", "visibility:visible");
 	}		
 	function step9() {
 		document.getElementById('step8').setAttribute("class", "hidden");
 		document.getElementById('step9').setAttribute("class", "visible");
-		document.getElementById('device10').setAttribute("style", "visibility:hidden");
-		document.getElementById('device11').setAttribute("style", "visibility:visible");
-				setTimeout(step10, 3000);
+		document.getElementById('device7').setAttribute("style", "visibility:hidden");
+		document.getElementById('device8').setAttribute("style", "visibility:visible");
 	}	
 	function step10() {
 		document.getElementById('step9').setAttribute("class", "hidden");
+				document.getElementById('stepf4').setAttribute("class", "hidden");
 		document.getElementById('step10').setAttribute("class", "visible");
-		document.getElementById('device11').setAttribute("style", "visibility:hidden");
-		document.getElementById('device12').setAttribute("style", "visibility:visible");
+		document.getElementById('device8').setAttribute("style", "visibility:hidden");
+				document.getElementById('devicef4').setAttribute("style", "visibility:hidden");
+		document.getElementById('device9').setAttribute("style", "visibility:visible");
 	}
 	function step11() {
 		document.getElementById('step10').setAttribute("class", "hidden");
 		document.getElementById('step11').setAttribute("class", "visible");
-		document.getElementById('device12').setAttribute("style", "visibility:hidden");
-		document.getElementById('device13').setAttribute("style", "visibility:visible");
+		document.getElementById('device9').setAttribute("style", "visibility:hidden");
+		document.getElementById('device10').setAttribute("style", "visibility:visible");
 	}
 	function step12() {
 		document.getElementById('step11').setAttribute("class", "hidden");
@@ -409,25 +415,29 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 
 <body onload="setTimeout(step0, 0);">
 
-<h1>So you want to encrypt your calls on Android?</h1>
+<h1>So you want to secure your calls on Android?</h1>
 
-<h2 id="stepf4">Go back to the main screen and you should see the Guardian Project apps. Click on <i>Gibberbot</i> to install. <a href="javascript:step4()">Got it.</a></h2>
+<h2 id="stepf4">Go back to the main screen and you should see the Guardian Project apps. Click on <i>CSipSimple</i> to install. <a href="javascript:step10()">Got it.</a></h2>
 <h2 id="stepf3">Enter: <i>https://guardianproject.info/repo/</i> (don't forget the s!) <br><a href="javascript:stepf4()">Done. Where are the apps?</a></h2>
 <h2 id="stepf2">Run the app and navigate over to Menu > Manage Repos > New Repository <a href="javascript:stepf3()">Cool. What do I enter?</a></h2>
 <h2 id="stepf1">There's an alternative app store. Install <i>F-droid</i> by entering <br><i>https://f-droid.org/FDroid.apk</i> into a web browser. <a href="javascript:stepf2()">Done. Next?</a></h2>
-<h2 id="step18">You're awesome! <a href="javascript:step1()">Play it again?</a><br>· For more info, visit our site: <a href="http://guardianproject.info" target="_blank">The Guardian Project</a> · </h2>
-<h2 id="step17">10. The bar <SPAN style="BACKGROUND-COLOR: limegreen"> turned green </SPAN>! We're secure. <a href="javascript:step18()"> Let's send him an encrypted message.</a></h2>
-<h2 id="step16">Mark got the right answer! <a href="javascript:step17()">Well then, let's confirm it's really him.</a></h2>
-<h2 id="step15">Got it! I checked on a trusted channel: <i>Spotify</i>. <a href="javascript:step16()">Send the secret.</a></h2>
-<h2 id="step14">I'm thinking of a question...</h2>
-<h2 id="step13">I can see Mark's fingerprint. Now let me send him a message that only you would know the answer to.</h2>
-<h2 id="step12">10. Is that really Mark? Pull up the verify option. <a href="javascript:step13()">Let's click it to make sure.</a></h2>
-<h2 id="step11">9. Let's send him an unencrypted message. <a href="javascript:step12()">Send "Oh hai!"</a></h2>
-<h2 id="step10">8. The bar <SPAN style="BACKGROUND-COLOR: yellow"> turned yellow </SPAN>! Mark got our chat & turned on encryption. <a href="javascript:step11()">Let's verify it's really Mark.</a></h2>
-<h2 id="step9">9. Search for <i>CSipSimple</i><a href="javascript:stepf1()">Got it!</a></h2>
-<h2 id="step8">8. Open the <i>Google Play Store</i>. <a href="javascript:step9()">Easy, next?</a><br><a href="javascript:stepf1()">It's blocked. Help!</a></h2>
+<h2 id="step22">You're awesome! <a href="javascript:step1()">Play it again?</a><br>· For more info, visit our site: <a href="http://guardianproject.info" target="_blank">The Guardian Project</a> · </h2>
+<h2 id="step21">The status should say "ZRTP - Verified", showing you that you're secure. <a href="javascript:step22()">That's what I see.</a></h2>
+<h2 id="step20">Then a confirmation code will pop up. Say it to them. If you both have the same code, you're secure</h2>
+<h2 id="step19">First it'll dial.</h2>
+<h2 id="step18">18. Dial 9-1-9-6 to do an echo test. <a href="javascript:step17()">Dialing...</a></h2>
+<h2 id="step17">17. To confirm it works, you'll see OSTN <SPAN style="BACKGROUND-COLOR: limegreen"> turn green </SPAN>. We're registered! <a href="javascript:step18()"> Let's test it.</a></h2>
+<h2 id="step16">16. We emailed you the account info. <a href="javascript:step17()">I just entered that info.</a></h2>
+<h2 id="step15">15. You'll find empty account info. <a href="javascript:step16()">Let's fill it in!</a></h2>
+<h2 id="step14">14. Scroll down and click the OSTN wizard under Expert<a href="javascript:step15()">I feel like a pro.</a></h2>
+<h2 id="step13">13. Add an Open Secure Telephony Network (OSTN) expert account. <a href="javascript:step14()">Pressed and I'm there.</a></h2>
+<h2 id="step12">12. Press the key icon to add an account. <a href="javascript:step13()">Pressed and I'm there.</a></h2>
+<h2 id="step11">11. Open up <i>CSipSimple</i>. <a href="javascript:step12()">Done.</a></h2>
+<h2 id="step10">10. Install it. <a href="javascript:step11()">That was easy.</a></h2>
+<h2 id="step9">9. Search for <i>CSipSimple</i><a href="javascript:step10()">Got it!</a></h2>
+<h2 id="step8">8. Open the <i>Google Play Store</i>. <a href="javascript:step9()">Easy, next?</a></h2>
 <h2 id="step7">7. Download a calling app for your <i>Ostel</i> service. On <i>Android</i>, we recommend <i>CSipSimple</i>. <br><a href="javascript:step8()">Where do I get it?</a></h2>
-<h2 id="step6">6. Welcome to <i>Ostel</i>! Your info is below and in your inbox. <a href="javascript:step7()">Where do I enter that info?</a></h2>
+<h2 id="step6">6. Welcome to <i>Ostel</i>! Your info is below and in your inbox. <a href="javascript:step7()"><br>Where do I enter that info?</a></h2>
 <h2 id="step5">5. Create a password. <a href="javascript:step6()">I made it super secure.</a></h2>
 <h2 id="step4">4. Choose a name so friends can find you. <a href="javascript:step5()">I picked a cool one!</a></h2>
 <h2 id="step3">3. Scroll to the bottom and register an account. <a href="javascript:step4()">Sounds good.</a></h2>
@@ -460,6 +470,8 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	<div id="device18"></div>
 	<div id="device19"></div>
 	<div id="device20"></div>
+	<div id="device21"></div>
+	<div id="device22"></div>
 </div>
 
 </body>
