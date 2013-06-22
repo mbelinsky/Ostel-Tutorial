@@ -230,10 +230,10 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	
 	function reset() {
 		document.getElementById('window').removeAttribute("class");
-		document.getElementById('device22').setAttribute("style", "visibility:hidden");																																								
+		document.getElementById('device21').setAttribute("style", "visibility:hidden");																																								
 		document.getElementById('device9').setAttribute("style", "visibility:hidden");
 		document.getElementById('devicef4').setAttribute("style", "visibility:hidden");
-		document.getElementById('step18').setAttribute("class", "away");
+		document.getElementById('step22').setAttribute("class", "away");
 	}
 	
 	function step0() {
@@ -408,26 +408,27 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('device17').setAttribute("style", "visibility:visible");
 	}
 	function step19() {
-		document.getElementById('step17').setAttribute("class", "hidden");
-		document.getElementById('step18').setAttribute("class", "visible");
+		document.getElementById('step18').setAttribute("class", "hidden");
+		document.getElementById('step19').setAttribute("class", "visible");
 		document.getElementById('device17').setAttribute("style", "visibility:hidden");
 		document.getElementById('device18').setAttribute("style", "visibility:visible");
+		setTimeout(step20, 2000);
 	}
 	function step20() {
-		document.getElementById('step17').setAttribute("class", "hidden");
-		document.getElementById('step18').setAttribute("class", "visible");
+		document.getElementById('step19').setAttribute("class", "hidden");
+		document.getElementById('step20').setAttribute("class", "visible");
 		document.getElementById('device18').setAttribute("style", "visibility:hidden");
 		document.getElementById('device19').setAttribute("style", "visibility:visible");
 	}
 	function step21() {
-		document.getElementById('step17').setAttribute("class", "hidden");
-		document.getElementById('step18').setAttribute("class", "visible");
+		document.getElementById('step20').setAttribute("class", "hidden");
+		document.getElementById('step21').setAttribute("class", "visible");
 		document.getElementById('device19').setAttribute("style", "visibility:hidden");
 		document.getElementById('device20').setAttribute("style", "visibility:visible");
 	}
 	function step22() {
-		document.getElementById('step17').setAttribute("class", "hidden");
-		document.getElementById('step18').setAttribute("class", "visible");
+		document.getElementById('step21').setAttribute("class", "hidden");
+		document.getElementById('step22').setAttribute("class", "visible");
 		document.getElementById('device20').setAttribute("style", "visibility:hidden");
 		document.getElementById('device21').setAttribute("style", "visibility:visible");
 	}				
@@ -437,7 +438,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 
 <body onload="setTimeout(step0, 0);">
 
-<h1>So you want to secure your calls on Android?</h1>
+<h1>So you want to make secure calls on Android?</h1>
 
 <h2 id="stepf4">Go back to the main screen and you should see the Guardian Project apps. Click on <i>CSipSimple</i> to install. <a href="javascript:step10()">Got it.</a></h2>
 <h2 id="stepf3">Enter: <i>https://guardianproject.info/repo/</i> (don't forget the s!) <br><a href="javascript:stepf4()">Done. Where are the apps?</a></h2>
@@ -445,27 +446,27 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 <h2 id="stepf1">There's an alternative app store. Install <i>F-droid</i> by entering <br><i>https://f-droid.org/FDroid.apk</i> into a web browser. <a href="javascript:stepf2()">Done. Next?</a></h2>
 <h2 id="step22">You're awesome! <a href="javascript:step1()">Play it again?</a><br>· For more info, visit our site: <a href="http://guardianproject.info" target="_blank">The Guardian Project</a> · </h2>
 <h2 id="step21">The status should say "ZRTP - Verified", showing you that you're secure. <a href="javascript:step22()">That's what I see.</a></h2>
-<h2 id="step20"><a href="javascript:step19()">I feel awesome.</a>
-<h2 id="step19">The status should say "ZRTP - Verified", showing you that you're secure.<a href="javascript:step19()">That's what I see. </a></h2>
-<h2 id="step18"><a href="javascript:step19()">Then a confirmation code will pop up. Say it to them. If you both have the same code, you're secure</a></h2>
-<h2 id="step17"><a href="javascript:step18()"> First it'll dial.</a></h2>
-<h2 id="step16">16. Dial 9-1-9-6 to do an echo test. <a href="javascript:step17()"> Dialing...</a></h2>
+<h2 id="step20">A confirmation code will pop up. Read it to them. If you both have the same code, you're secure. <br><a href="javascript:step21()">Our security codes match.</a>
+<h2 id="step19">It's ringing. </h2>
+<h2 id="step18">18. Great! Let's call a friend.<br><a href="javascript:step19()">I'm dialing <i>Hans</i></a></h2>
+<h2 id="step17">17. In the echo test, you should be able to hear your own voice. Say <i>cheese</i>!<br><a href="javascript:step18()"> I heard myself saying cheese, echoed.</a></h2>
+<h2 id="step16">16. Dial 9-1-9-6 to do an echo test. <br><a href="javascript:step17()"> Dialing...</a></h2>
 <h2 id="step15">15. To confirm it works, you'll see OSTN <SPAN style="BACKGROUND-COLOR: limegreen"> turn green </SPAN>. We're registered! <br><a href="javascript:step16()">Let's test it.</a></h2>
-<h2 id="step14">14. We emailed you the account info. <a href="javascript:step15()">I just entered that info.</a></h2>
-<h2 id="step13">13. You'll find empty account info. <a href="javascript:step14()">Let's fill it in!</a></h2>
-<h2 id="step12">12. Scroll down and click the  Open Secure Telephony Network (OSTN)  account wizard under Expert. <a href="javascript:step13()">I feel like a pro.</a></h2>
-<h2 id="step11">11. Add an account.  <a href="javascript:step12()">Adding...</a></h2>
-<h2 id="step10">10. Press the key icon to add an account. <a href="javascript:step11()">Pressed and I'm there.</a></h2>
-<h2 id="step9">9. Open up <i>CSipSimple</i>.  <a href="javascript:step10()">Done.</a></h2>
-<h2 id="step8">8. Open the <i>Google Play Store</i> and install <i>CSipSimple</i> . <a href="javascript:step9()">Easy, next?</a></h2>
+<h2 id="step14">14. We emailed you the account info. <br><a href="javascript:step15()">I just entered that info.</a></h2>
+<h2 id="step13">13. You'll find empty account info. <br><a href="javascript:step14()">Let's fill it in!</a></h2>
+<h2 id="step12">12. Scroll down and click the  Open Secure Telephony Network (OSTN)  account wizard under Expert. <br><a href="javascript:step13()">I feel like a pro.</a></h2>
+<h2 id="step11">11. Add an account.  <br><a href="javascript:step12()">Adding...</a></h2>
+<h2 id="step10">10. Press the key icon to add an account. <br><a href="javascript:step11()">Pressed and I'm there.</a></h2>
+<h2 id="step9">9. Open up <i>CSipSimple</i>.  <br><a href="javascript:step10()">Done.</a></h2>
+<h2 id="step8">8. Open the <i>Google Play Store</i> and install <a href="https://play.google.com/store/apps/details?id=com.csipsimple" target="_blank">CSipSimple</a>. <br><a href="javascript:step9()">Easy, next?</a></h2>
 <h2 id="step7">7. Download a calling app for your <i>Ostel</i> service. <br>On <i>Android</i>, we recommend <i>CSipSimple</i>. <br><a href="javascript:step8()">Where do I get it?</a></h2>
-<h2 id="step6">6. Welcome to <i>Ostel</i>! Your info is below and in your inbox. <a href="javascript:step7()"><br>Where do I enter that info?</a></h2>
-<h2 id="step5">5. Create a password. <a href="javascript:step6()">I made it super secure.</a></h2>
-<h2 id="step4">4. Choose a name so friends can find you. <a href="javascript:step5()">I picked a cool one!</a></h2>
-<h2 id="step3">3. Scroll to the bottom and register an account. <a href="javascript:step4()">Sounds good.</a></h2>
-<h2 id="step2">2. Check out all the features for <i>Ostel</i>. <a href="javascript:step3()">Cool! I want it.</a></h2>
+<h2 id="step6">6. Welcome to <i>Ostel</i>! Your info is below and in your email inbox. <a href="javascript:step7()"><br>Where do I enter that info?</a></h2>
+<h2 id="step5">5. Create a password. <br><a href="javascript:step6()">I made it super secure.</a></h2>
+<h2 id="step4">4. Choose a name so friends can find you. <br><a href="javascript:step5()">I picked a cool one!</a></h2>
+<h2 id="step3">3. Scroll to the bottom and register an account. <br><a href="javascript:step4()">Sounds good.</a></h2>
+<h2 id="step2">2. Check out all the features for <i>Ostel</i>. <br><a href="javascript:step3()">Cool! I want it.</a></h2>
 <h2 id="step1">1. Go to our website: <a href="https://ostel.co" target="_blank">Ostel.co</a></i>. <br><a href="javascript:step2()">Easy. Next?</a> </h2>
-<h2 id="step0">Yes. <a href="javascript:step1()">How do I do that?</a></h2>
+<h2 id="step0">Yes. <br><a href="javascript:step1()">How do I do that?</a></h2>
 
 <div id="window">
 	<div id="device1"></div>
