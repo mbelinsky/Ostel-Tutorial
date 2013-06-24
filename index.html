@@ -38,7 +38,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	}
 
 	#window {
-		background: url('galaxy.png') no-repeat center bottom;
+		background: url('galaxy.jpeg') no-repeat center bottom;
 		overflow: hidden;
 		position: absolute;
 		top: 200px;
@@ -68,100 +68,100 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 	}
 	
 	#device1 {
-		background: url('galaxy1.png') no-repeat bottom;
+		background: url('galaxy1.jpeg') no-repeat bottom;
 	}
 	#devicef1 {
-		background: url('galaxyf1.png') no-repeat bottom;
+		background: url('galaxyf1.jpeg') no-repeat bottom;
 	}
 	#devicef2 {
-		background: url('galaxyf2.png') no-repeat bottom;
+		background: url('galaxyf2.jpeg') no-repeat bottom;
 	}
 	#devicef3 {
-		background: url('galaxyf3.png') no-repeat bottom;
+		background: url('galaxyf3.jpeg') no-repeat bottom;
 	}
 	#devicef4 {
-		background: url('galaxyf4.png') no-repeat bottom;
+		background: url('galaxyf4.jpeg') no-repeat bottom;
 	}	
 	#device2 {
-		background: url('galaxy2.png') no-repeat bottom;
+		background: url('galaxy2.jpeg') no-repeat bottom;
 	}
 
 	#device3 {
-		background: url('galaxy3.png') no-repeat bottom;
+		background: url('galaxy3.jpeg') no-repeat bottom;
 	}
 
 	#device4 {
-		background: url('galaxy4.png') no-repeat bottom;
+		background: url('galaxy4.jpeg') no-repeat bottom;
 	}
 
 	#device5 {
-		background: url('galaxy5.png') no-repeat bottom;
+		background: url('galaxy5.jpeg') no-repeat bottom;
 	}
 
 	#device6 {
-		background: url('galaxy6.png') no-repeat bottom;
+		background: url('galaxy6.jpeg') no-repeat bottom;
 	}
 
 	#device7 {
-		background: url('galaxy7.png') no-repeat bottom;
+		background: url('galaxy7.jpeg') no-repeat bottom;
 	}
 
 	#device8 {
-		background: url('galaxy8.png') no-repeat bottom;
+		background: url('galaxy8.jpeg') no-repeat bottom;
 	}
 
 	#device9 {
-		background: url('galaxy9.png') no-repeat bottom;
+		background: url('galaxy9.jpeg') no-repeat bottom;
 	}
 
 	#device10 {
-		background: url('galaxy10.png') no-repeat bottom;
+		background: url('galaxy10.jpeg') no-repeat bottom;
 	}
 
 	#device11 {
-		background: url('galaxy11.png') no-repeat bottom;
+		background: url('galaxy11.jpeg') no-repeat bottom;
 	}
 
 	#device12 {
-		background: url('galaxy12.png') no-repeat bottom;
+		background: url('galaxy12.jpeg') no-repeat bottom;
 	}
 
 	#device13 {
-		background: url('galaxy13.png') no-repeat bottom;
+		background: url('galaxy13.jpeg') no-repeat bottom;
 	}
 
 	#device14 {
-		background: url('galaxy14.png') no-repeat bottom;
+		background: url('galaxy14.jpeg') no-repeat bottom;
 	}
 
 	#device15 {
-		background: url('galaxy15.png') no-repeat bottom;
+		background: url('galaxy15.jpeg') no-repeat bottom;
 	}
 
 	#device16 {
-		background: url('galaxy16.png') no-repeat bottom;
+		background: url('galaxy16.jpeg') no-repeat bottom;
 	}
 
 	#device17 {
-		background: url('galaxy17.png') no-repeat bottom;
+		background: url('galaxy17.jpeg') no-repeat bottom;
 	}
 
 	#device18 {
-		background: url('galaxy18.png') no-repeat bottom;
+		background: url('galaxy18.jpeg') no-repeat bottom;
 	}
 
 	#device19 {
-		background: url('galaxy19.png') no-repeat bottom;
+		background: url('galaxy19.jpeg') no-repeat bottom;
 	}
 
 	#device20 {
-		background: url('galaxy20.png') no-repeat bottom;
+		background: url('galaxy20.jpeg') no-repeat bottom;
 	}
 	#device21 {
-		background: url('galaxy21.png') no-repeat bottom;
+		background: url('galaxy21.jpeg') no-repeat bottom;
 	}
 	#device22 {
-		background: url('galaxy22.png') no-repeat bottom;
+		background: url('galaxy22.jpeg') no-repeat bottom;
 	}
 	
 	h1 {
@@ -246,11 +246,11 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 		document.getElementById('step0').setAttribute("class", "hidden");
 		document.getElementById('step1').setAttribute("class", "visible");
 		document.getElementById('cursor').setAttribute("class", "away");
-	}
-	
+	}	
 	function stepf1() {
 		document.getElementById('step8').setAttribute("class", "hidden");
 		document.getElementById('stepf1').setAttribute("class", "visible");
+		document.getElementById('device7').setAttribute("style", "visibility:hidden");
 		document.getElementById('devicef1').setAttribute("style", "visibility:visible");
 	}
 	function stepf2() {
@@ -442,8 +442,8 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 
 <h2 id="stepf4">Go back to the main screen and you should see the Guardian Project apps. Click on <i>CSipSimple</i> to install. <a href="javascript:step10()">Got it.</a></h2>
 <h2 id="stepf3">Enter: <i>https://guardianproject.info/repo/</i> (don't forget the s!) <br><a href="javascript:stepf4()">Done. Where are the apps?</a></h2>
-<h2 id="stepf2">Run the app and navigate over to Menu > Manage Repos > New Repository <a href="javascript:stepf3()">Cool. What do I enter?</a></h2>
-<h2 id="stepf1">There's an alternative app store. Install <i>F-droid</i> by entering <br><i>https://f-droid.org/FDroid.apk</i> into a web browser. <a href="javascript:stepf2()">Done. Next?</a></h2>
+<h2 id="stepf2">Run the app and navigate over to Menu > Manage Repos > New Repository <br><a href="javascript:stepf3()">Cool. What do I enter?</a></h2>
+<h2 id="stepf1">There's an alternative app store. Install <i>F-droid</i> by entering <br><i>https://f-droid.org/FDroid.apk</i> into a web browser. <br><a href="javascript:stepf2()">Done. Next?</a></h2>
 <h2 id="step22">You're awesome! <a href="javascript:step1()">Play it again?</a><br>· For more info, visit our site: <a href="http://guardianproject.info" target="_blank">The Guardian Project</a> · </h2>
 <h2 id="step21">The status should say "ZRTP - Verified", showing you that you're secure. <a href="javascript:step22()">That's what I see.</a></h2>
 <h2 id="step20">A confirmation code will pop up. Read it to them. If you both have the same code, you're secure. <br><a href="javascript:step21()">Our security codes match.</a>
@@ -458,7 +458,7 @@ Thanks to Sam Vermette for the inspiration - http://samvermette.com/
 <h2 id="step11">11. Add an account.  <br><a href="javascript:step12()">Adding...</a></h2>
 <h2 id="step10">10. Press the key icon to add an account. <br><a href="javascript:step11()">Pressed and I'm there.</a></h2>
 <h2 id="step9">9. Open up <i>CSipSimple</i>.  <br><a href="javascript:step10()">Done.</a></h2>
-<h2 id="step8">8. Open the <i>Google Play Store</i> and install <a href="https://play.google.com/store/apps/details?id=com.csipsimple" target="_blank">CSipSimple</a>. <br><a href="javascript:step9()">Easy, next?</a></h2>
+<h2 id="step8">8. Open the <i>Google Play Store</i> and install <a href="https://play.google.com/store/apps/details?id=com.csipsimple" target="_blank">CSipSimple</a>. <!--<br><a href="javascript:stepf1()">It's blocked. Help!</a>!--><br><a href="javascript:step9()">Easy, next?</a></h2>
 <h2 id="step7">7. Download a calling app for your <i>Ostel</i> service. <br>On <i>Android</i>, we recommend <i>CSipSimple</i>. <br><a href="javascript:step8()">Where do I get it?</a></h2>
 <h2 id="step6">6. Welcome to <i>Ostel</i>! Your info is below and in your email inbox. <a href="javascript:step7()"><br>Where do I enter that info?</a></h2>
 <h2 id="step5">5. Create a password. <br><a href="javascript:step6()">I made it super secure.</a></h2>
